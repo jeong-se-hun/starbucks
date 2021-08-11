@@ -1,26 +1,5 @@
 // 검색
-const searchEL = document.querySelector('.search');
-const searchInputEl = searchEL.querySelector('input');
 
-searchEL.addEventListener('click', function () {
-
-  searchInputEl.focus();
-
-});
-
-searchInputEl.addEventListener('focus', function () {
-
-  searchEL.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-
-})
-
-searchInputEl.addEventListener('blur', function () {
-
-  searchEL.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder', '');
-
-})
 
 // 우측 이벤트베너 & 위로가기 버튼
 
@@ -220,8 +199,3 @@ new Swiper('.awards .swiper-container', {
 
 })
 
-// footer 카피라이터 년도 자동삽입
-
-const thisYear = document.querySelector('.this-year');
-
-thisYear.textContent = new Date().getFullYear();
